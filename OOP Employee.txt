@@ -1,0 +1,14 @@
+class Employee:
+    def __init__(self, EmployeeId, EmployeeName, Department, Designation, BasicSalary, HouseRent, Medical):
+        self.EmployeeId = EmployeeId
+        self.EmployeeName = EmployeeName
+        self.Department = Department
+        self.Designation = Designation
+        self.BasicSalary = BasicSalary
+        self.HouseRent = HouseRent
+        self.Medical = Medical
+        
+    def displayEmployee(self):
+        print("EmployeeId : ", self.EmployeeId,  "\nEmployeeName: ", self.EmployeeName,
+        "\nDepartment : ", self.Department,  "\nDesignation: ", self.Designation,
+        "\nBasicSalary : ", self.BasicSalary,  "\nHouseRent: ", self.HouseRent, "\nMedical: ", self.Medical)

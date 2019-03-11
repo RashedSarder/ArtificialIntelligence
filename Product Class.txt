@@ -1,0 +1,73 @@
+class Product:
+    #Default constructor and parameterized constructor
+    def __init__(self, prodId=0, prodName="", manuDate="", expDate="", unitProdCost=0.0, unitSellPrice=0.0):
+        self.prodId = prodId
+        self.prodName = prodName
+        self.manuDate = manuDate
+        self.expDate = expDate
+        self.unitProdCost = unitProdCost
+        self.unitSellPrice = unitSellPrice
+        
+    def setprodId(self,prodId):
+         self.prodId = prodId
+    
+    def setprodName(self,prodName):
+        self.prodName = prodName
+        
+    def setmanuDate(self,manuDate):
+        self.manuDate=manuDate
+    
+    def setexpDate(self,expDate):
+        self.expDate=expDate
+        
+    def setunitProdCost(self,unitProdCost):
+        self.unitProdCost=unitProdCost
+        
+    def setunitSellPrice(self,unitSellPrice):
+        self.unitSellPrice=unitSellPrice
+        
+    def getprodId(self):
+         return self.prodId
+    
+    def getprodName(self):
+        return self.prodName
+        
+    def getmanuDate(self):
+        return self.manuDate
+    
+    def getexpDate(self):
+        return self.expDate
+        
+    def getunitProdCost(self):
+        return self.unitProdCost
+        
+    def getunitSellPrice(self):
+        return self.unitSellPrice
+        
+    def displayProduct(self):
+        print("Product ID : ", self.prodId,  "\nProduct Name: ", self.prodName,
+        "\nManufacturing Date : ", self.manuDate,  "\nExpire Date: ", self.expDate,
+        "\nProduction cost per unit : ", self.unitProdCost,  "\nSell Price Per unit: ", self.unitSellPrice)
+
+
+#product 1 object is creating using parameterized constructor
+prod1 = Product(100,"T-shirt", "10/12/2019","10/12/2020",5.5,7.5)
+prod1.displayProduct()
+
+print("\n")
+
+#product 2 object is creating using default constructor
+prod2 = Product();
+prod2.displayProduct()
+
+print("\n")
+
+#set the value of product 2
+prod2.setprodId(200)
+prod2.setprodName("The")
+prod2.setmanuDate("10/12/2019")
+prod2.setexpDate("10/12/2019")
+prod2.setunitProdCost(1.2)
+prod2.setunitSellPrice(2.1)
+
+prod2.displayProduct()
